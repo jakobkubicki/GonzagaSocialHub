@@ -2,7 +2,6 @@
 <br />
 <div align="center">
   </a>
-
 <h3 align="center">Gonzaga Social Hub</h3>
 
   <p align="center">
@@ -52,6 +51,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
+Here we can add some stuff about the project
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -67,7 +67,7 @@ First steps to getting project running
 1. First Step
 2. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/jakobkubicki/GonzagaSocialHub.git
    ```
 3. Install proper NPM packages
    ```sh
