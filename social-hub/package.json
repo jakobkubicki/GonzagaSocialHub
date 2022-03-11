@@ -17,7 +17,8 @@
     "commands": [
       {
         "command": "social-hub.start",
-        "title": "Gonzaga Social Hub"
+        "title": "Gonzaga Social Hub",
+        "category": "Collaborative Tools"
       }
     ]
   },

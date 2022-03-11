@@ -12,14 +12,17 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	let disposable = vscode.commands.registerCommand('social-hub.start', function () {
-		// The code you place here will be executed every time your command is executed
-
-		// Display a message box to the user
-		vscode.window.showInformationMessage('This is the Gonzaga Social Hub!');
-	});
-
-	context.subscriptions.push(disposable);
+	context.subscriptions.push(
+		vscode.commands.registerCommand('social-hub.start', () => {
+		  // Create and show a new webview
+		  const panel = vscode.window.createWebviewPanel(
+			'socialHub', // Identifies the type of the webview. Used internally
+			'Gonzaga Social Hub', // Title of the panel displayed to the user
+			vscode.ViewColumn.One, // Editor column to show the new webview panel in.
+			{} // Webview options. More on these later.
+		  );
+		})
+	  );
 }
 
 function deactivate() {
