@@ -69,9 +69,9 @@ First steps to getting project running
    ```sh
    git clone https://github.com/jakobkubicki/GonzagaSocialHub.git
    ```
-3. Install proper NPM packages
+3. Next steps will go here
    ```sh
-   npm install
+   xxx
    ```
 
 
@@ -91,9 +91,9 @@ Usage will go here
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Create foundation for extension
-- [ ] Implement features
-- [ ] Profit?
+- [ ] Build out the html 
+- [ ] Convert static html to dynamic framework
+- [ ] Connect database and build out the backend
 
 See the [open issues](https://github.com/jakobkubciki/GonzagaSocialHub/issues) for a full list of proposed features (and known issues).
 
@@ -126,9 +126,7 @@ Jakob Kubicki - jakobkub@gmail.com
 
 Daniel Olivares - olivares@gonzaga.edu
 
-Adam L - 
-
-Katie Imhof - 
+Katie Imhof - kimhof@zagmail.gonzaga.edu
 
 Project Link: (https://github.com/jakobkubicki/GonzagaSocialHub)
 
