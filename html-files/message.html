@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.grid-container {
+	display: grid;
+	background-color: rgba(120, 120, 120, 0.9);
+	padding: 10px;
+}
+
+.grid-container > div {
+	background-color: rgba(20, 20, 20, 0.8);
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+}
+
+.item1 {
+	font-family: Verdana;
+}
+
+.tab {
+	overflow: hidden;
+	border: 1px solid rgba(0, 0, 0, 0.8);
+	background-color: rgba(120, 120, 120, 0.9);
+}
+
+.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+	color: white;
+	font-family: Verdana;
+}
+
+.tab button:hover {
+	background-color: #ddd;
+}
+
+.tab button.active {
+	background-color: #ccc;
+}
+
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+
+</style>
+</head>
+<body>
+
+<div class="grid-container">
+	<div class="item1">
+		<h1 style="font-size:35px;color:white;">Messages</h1>
+		<div class="tab">
+			<button class="tablinks" onclick="openMessage(event,'Professor')">Professor</button>
+			<button class="tablinks" onclick="openMessage(event, 'Classmate')">Classmate</button>
+			<button class="tablinks" onclick="openMessage(event, 'TA')">TA</button>
+		</div>
+
+		<div id="Professor" class="tabcontent">
+			<h3 style="font-size:35px;color:white;text-align:left;">Professor</h3>
+			<p style="font-size:20px;color:white;">Student</p>
+			<p style="font-size:15px;color:white;">Hey Professor! I'm struggling with figuring out how to position divs on my website, would you mind taking a look at my code?</p>
+			<p style="font-size:20px;color:white;">Professor</p>
+			<p style="font-size:15px;color:white;">The site looks great! Check out Chapter 3 in the book, it goes over Grid Layout which will work better for what you're trying to do. If you have anymore questions, feel free to reach out!</p>
+		</div>
+
+		<div id="Classmate" class="tabcontent">
+			<h3 style="font-size:35px;color:white;">Classmate</h3>
+			<p style="font-size:20px;color:white;">Student</p>
+			<p style="font-size:15px;color:white;">Hey! Did you use Grid Layout or Flexbox for the homework assignment?</p>
+			<p style="font-size:20px;color:white;">Classmate</p>
+			<p style="font-size:15px;color:white;">Hi! I used Grid Layout, I found it was easier than Flexbox.</p>
+			<p style="font-size:20px;color:white;">Student</p>
+			<p style="font-size:15px;color:white;">Okay I think I'm going to use Grid as well!</p>
+		</div>
+
+		<div id="TA" class="tabcontent">
+			<h3 style="font-size:35px;color:white;">TA</h3>
+			<p style="font-size:20px;color:white;">Student</p>
+			<p style="font-size:15px;color:white;">Hi! I'm struggling with adding a link tag with a reference to an external website. Do you have any suggestions?</p>
+			<p style="font-size:20px;color:white;">TA</p>
+			<p style="font-size:15px;color:white;">Hi! Would you be able to hop on Zoom? It'll be much easier to explain.</p>
+		</div>
+	</div>
+</div>
+
+<script>
+function openMessage(evt, messager) {
+	var i, tabcontent, tablinks;
+	tabcontent = document.getElementsByClassName("tabcontent");
+	for (i = 0; i < tabcontent.length; i++) {
+		tabcontent[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablinks");
+	for (i = 0; i < tablinks.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" active", "");
+	}
+	document.getElementById(messager).style.display = "block";
+	evt.currentTarget.className += " active";
+}
+</script>
+
+</body
+</html>
