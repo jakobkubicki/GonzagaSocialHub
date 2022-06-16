@@ -21,25 +21,44 @@
 			<p style="font-size:15px;color:white;">Hey Professor! I'm struggling with figuring out how to position divs on my website, would you mind taking a look at my code?</p>
 			<p style="font-size:20px;color:white;">Professor</p>
 			<p style="font-size:15px;color:white;">The site looks great! Check out Chapter 3 in the book, it goes over Grid Layout which will work better for what you're trying to do. If you have anymore questions, feel free to reach out!</p>
-		</div>
+            <div class="Message">
+               <div id="MessageBox">Message hi.</div> 
+               <script>
+                    var userMessage = prompt("Enter message here:", "");
+                    if(userMessage!=null) {
+    document.getElementById("MessageBox").innerHTML = userMessage;
+}
+            </script>
+            </div>
+        </div>
 
 		<div id="Classmate" class="tabcontent">
-			<h3 style="font-size:35px;color:white;">Classmate</h3>
+			<h3 style="font-size:35px;color:white;text-align:left;">Classmate</h3>
 			<p style="font-size:20px;color:white;">Student</p>
 			<p style="font-size:15px;color:white;">Hey! Did you use Grid Layout or Flexbox for the homework assignment?</p>
 			<p style="font-size:20px;color:white;">Classmate</p>
 			<p style="font-size:15px;color:white;">Hi! I used Grid Layout, I found it was easier than Flexbox.</p>
 			<p style="font-size:20px;color:white;">Student</p>
 			<p style="font-size:15px;color:white;">Okay I think I'm going to use Grid as well!</p>
-		</div>
+            <div class="Message">
+                <form action="/action_page.php">
+                    <input type="text" id="message" name="message" value="Message"><br><br>
+                </form>
+            </div>
+        </div>
 
 		<div id="TA" class="tabcontent">
-			<h3 style="font-size:35px;color:white;">TA</h3>
+			<h3 style="font-size:35px;color:white;text-align:left;">TA</h3>
 			<p style="font-size:20px;color:white;">Student</p>
 			<p style="font-size:15px;color:white;">Hi! I'm struggling with adding a link tag with a reference to an external website. Do you have any suggestions?</p>
 			<p style="font-size:20px;color:white;">TA</p>
 			<p style="font-size:15px;color:white;">Hi! Would you be able to hop on Zoom? It'll be much easier to explain.</p>
-		</div>
+            <div class="Message">
+                <form action="/action_page.php">
+                    <input type="text" id="message" name="message" value="Message"><br><br>
+                </form>
+            </div>
+        </div>
 	</div>
 </div>
 
