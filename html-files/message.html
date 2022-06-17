@@ -23,12 +23,6 @@
 			<p style="font-size:15px;color:white;">The site looks great! Check out Chapter 3 in the book, it goes over Grid Layout which will work better for what you're trying to do. If you have anymore questions, feel free to reach out!</p>
             <div class="Message">
                <div id="MessageBox">Message hi.</div> 
-               <script>
-                    var userMessage = prompt("Enter message here:", "");
-                    if(userMessage!=null) {
-    document.getElementById("MessageBox").innerHTML = userMessage;
-}
-            </script>
             </div>
         </div>
 
@@ -54,8 +48,9 @@
 			<p style="font-size:20px;color:white;">TA</p>
 			<p style="font-size:15px;color:white;">Hi! Would you be able to hop on Zoom? It'll be much easier to explain.</p>
             <div class="Message">
-                <form action="/action_page.php">
+                <form action="https://www.google.com">
                     <input type="text" id="message" name="message" value="Message"><br><br>
+                    <input type="submit" value="Send">
                 </form>
             </div>
         </div>
@@ -75,6 +70,10 @@ function openMessage(evt, messager) {
 	}
 	document.getElementById(messager).style.display = "block";
 	evt.currentTarget.className += " active";
+}
+var userMessage = prompt("Enter message here:", "");
+if(userMessage!=null) {
+    document.getElementById("MessageBox").innerHTML = userMessage;
 }
 </script>
 
