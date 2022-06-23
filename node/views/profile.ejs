@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="./style/profilestyle.css">
+</head>
+<body>
+
+    <div class="grid-container">
+        <div class="item1">
+            <p><img src="https://lh3.googleusercontent.com/pw/AM-JKLVDQiXiYz9eXaqtQaMtXOFBlxBXHSaQohsV5qzEXtms0TqePBaoUvV1ORDVxZrBRKQMDjlBgzyFoNIJKo3mFuIq5r8lhurW9q52FhvvtrWYKbuI-rouJVrKzX0T9OCeWpBH41i8UcuVe25OyQL2pTBWcw=w1890-h1418-no?authuser=0" alt="Profile Icon" style="position:absolute;top:65px; left:500px;width:50px;height:50px;"></p>
+            <h1 style="font-size:35px;color:white;">Student Name</h1>
+            
+            <p style="font-size:15px;color:white;">Bio where students can describe themselves <br> and their goals</p>
+            
+        </div>
+            
+        <div class="item2">
+            <h1 style="font-size:35px;color:white;">Badges</h1>
+            <h1 style="font-size:35px;color:gray;position:absolute;top:227px;left:420px;">4</h1>
+            <p>
+                <p style="font-size:15px;color:white;">Novice Developer</p>
+                <p><img src="NoviceDeveloper.png" alt="Novice Developer Icon" style="position:absolute;top:320px;left:225px;width:25px;height:25px;"></p>
+                <p><img src="AdvancedDeveloper.png" alt="Advanced Developer Icon" style="position:absolute;top:365px;left:225px;width:25px;height:25px;"></p>
+                <p style="font-size:15px;color:white;">Advanced Developer</p>
+                <span id="dots"></span><span id="more">
+                <p style="font-size:15px;color:white;">Bug Squasher</p>
+                <p style="font-size:15px;color:white;">HTML Wizard</p>
+                <p><img src="BugSquasher.png" alt="Bug Squasher" style="position:absolute;top:400px;left:225px;width:25px;height:25px;"></p>
+                <p><img src="HTML.png" alt="HTML" style="position:absolute;top:435px;left:225px;width:25px;height:25px;"></p>
+            </span>
+            </p>
+            <button onclick="badgesFunction()" id="myBtn">View more</button>
+            
+            
+        </div>
+        <div class="item3">
+            <h1 style="font-size:35px;color:white;">Projects</h1>
+            <h1 style="font-size:35px;color:gray;position:absolute;top:227px;right:285px;">4</h1>
+            <p>
+                <p style="font-size:15px;font-color:white;"><a href="https://github.com">https://github.com/Student/project</a></p>
+                <p style="font-size:15px;font-color:white;"><a href="https://github.com">https://github.com/Student/project2</a></p>
+                <span id="dots2"></span><span id="more2">
+                <p style="font-size:15px;font-color:white;"><a href="https://github.com">https://github.com/Student/project3</a></p>
+                <p style="font-size:15px;font-color:white;"><a href="https://github.com">https://github.com/Student/project4</a></p>
+            </span>
+            </p>
+            <button onclick="projectsFunction()" id="secondBtn">View more</button>
+        </div>
+    </div>
+    
+    <div id="status"></div>
+    <script>
+        let status = document.getElementById("status");
+                
+                window.addEventListener('load', function(e) {
+                    if (navigator.onLine) {
+                        //status.innerHTML = "Online";
+                status.classList.add("success");
+                    } else {
+                        status.innerHTML = "User is offline";
+                        status.classList.remove("success");
+                        status.classList.add("error");
+                    }
+                }, false);
+                
+                window.addEventListener('online', function(e) {
+                    status.innerHTML = "Back";
+                    status.classList.remove("error");
+                    status.classList.add("success");
+                }, false);
+                
+                window.addEventListener('offline', function(e) {
+                    status.innerHTML = "User went offline";
+                    status.classList.remove("success");
+                    status.classList.add("error");
+                }, false);
+    
+        function badgesFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+    
+              if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "View more"; 
+                    moreText.style.display = "none";
+              } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "View less"; 
+                    moreText.style.display = "inline";
+              }
+        }
+        function projectsFunction() {
+              var dots2 = document.getElementById("dots2");
+              var moreText2 = document.getElementById("more2");
+              var btnText2 = document.getElementById("secondBtn");
+    
+              if (dots2.style.display === "none") {
+                    dots2.style.display = "inline";
+                    btnText2.innerHTML = "View more"; 
+                    moreText2.style.display = "none";
+              } else {
+                    dots2.style.display = "none";
+                    btnText2.innerHTML = "View less"; 
+                    moreText2.style.display = "inline";
+              }
+        }
+    </script>
+    </body>
+    </html>

@@ -3,7 +3,6 @@ Social Hub App v0.0.1
 Authors:
 	Jakob Kubicki
 	Daniel Olivares
-	Adam L
 	Katie Imhof
 */
 const vscode = require('vscode');
