@@ -15,6 +15,14 @@ app.get('', (req, res) => {
     res.render('index', { text: 'Homepage'})
 })
 
+app.get('/profile', (req, res) => {
+    res.render('profile', { text: 'Profile'})
+})
+
+app.get('/forums', (req, res) => {
+    res.render('forums', { text: 'forums'})
+})
+
 app.get('/message', (req, res) => {
     res.render('message', { text: 'Message'})
 })
