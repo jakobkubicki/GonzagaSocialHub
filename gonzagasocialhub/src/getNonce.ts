@@ -1,3 +1,10 @@
+/*
+	@authors
+		npm library
+	@desc
+		returns a nonce (number used once)
+*/
+
 export function getNonce() {
     let text = "";
     const possible =

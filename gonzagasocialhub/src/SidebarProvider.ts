@@ -1,3 +1,9 @@
+/*
+	@authors
+		Jakob Kubicki
+	@desc
+		sidebar module
+*/
 import * as vscode from "vscode";
 import { getNonce } from "./getNonce";
 

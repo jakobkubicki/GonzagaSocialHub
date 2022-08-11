@@ -1,3 +1,12 @@
+/*
+	@authors
+		Jakob Kubicki
+	@desc
+		profile module
+  @sources
+    https://github.com/benawad/vstodo
+*/
+
 import * as vscode from "vscode";
 import { getNonce } from "./getNonce";
 

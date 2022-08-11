@@ -1,3 +1,14 @@
+/*
+	@authors
+		Jakob Kubicki
+	@desc
+		loads the extension
+	@version
+		0.0.2
+	@sources
+    	https://github.com/benawad/vstodo
+*/
+
 import * as vscode from 'vscode';
 import {profile} from "./profile"
 import {forums} from "./forums"
