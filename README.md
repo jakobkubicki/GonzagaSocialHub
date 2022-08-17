@@ -10,7 +10,7 @@
     <a href="https://github.com/jakobkubicki/GonzagaSocialHub"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://imgur.com/0nm5qlA">View Demo</a>
+    <a href="https://i.imgur.com/0nm5qlA.mp4">View Demo</a>
     ·
     <a href="https://github.com/jakobkubicki/GonzagaSocialHub/issues">Report Bug</a>
     ·
@@ -77,6 +77,7 @@ The Gonzaga Social Hub requires the following to run:
    npm install
    ```
 3. Open the gonzagasocialhub folder within Visual Studio Code
+<br>
 4. Inside the editor, press F5. This will compile and run the extension in a new Extension Development Host window. Run the gonzagasocialhub.start command from the Command Palette (⇧⌘P) in the new window:
 
 
