@@ -10,7 +10,7 @@
     <a href="https://github.com/jakobkubicki/GonzagaSocialHub"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/jakobkubicki/GonzagaSocialHub">View Demo</a>
+    <a href="https://imgur.com/0nm5qlA">View Demo</a>
     ·
     <a href="https://github.com/jakobkubicki/GonzagaSocialHub/issues">Report Bug</a>
     ·
@@ -26,9 +26,6 @@
   <ol>
     <li>
       <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -61,6 +58,13 @@ Computer science students tend to work individually, rather than collaborating w
 First steps to getting project running
 
 ### Prerequisites
+
+The Gonzaga Social Hub requires the following to run:
+
+<ul> 
+  <li> Nodejs
+  <li> npm
+ </ul>
 
 ### Installation
 
