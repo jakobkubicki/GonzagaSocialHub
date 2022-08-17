@@ -64,15 +64,16 @@ First steps to getting project running
 
 ### Installation
 
-1. First Step
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/jakobkubicki/GonzagaSocialHub.git
    ```
-3. Next steps will go here
+2. Ensure npm is installed and run
    ```sh
-   xxx
+   npm install
    ```
+3. Open the gonzagasocialhub folder within Visual Studio Code
+4. Inside the editor, press F5. This will compile and run the extension in a new Extension Development Host window. Run the gonzagasocialhub.start command from the Command Palette (⇧⌘P) in the new window:
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -96,7 +97,7 @@ This will also help the students after college, developing team-working skills t
 <!-- ROADMAP -->
 ## Roadmap
 
-- [✓] Build out the html
+- [x] Build out the html
 - [ ] Convert static html to dynamic framework
 - [ ] Connect database and build out the backend
 
@@ -109,7 +110,9 @@ See the [open issues](https://github.com/jakobkubciki/GonzagaSocialHub/issues) f
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions can go here
+<a href="https://github.com/jakobkubicki/GonzagaSocialHub/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=jakobkubicki/GonzagaSocialHub" />
+</a>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -142,6 +145,7 @@ Project Link: (https://github.com/jakobkubicki/GonzagaSocialHub)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
+https://github.com/benawad/vstodo
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
