@@ -51,7 +51,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here we can add some stuff about the project
+Computer science students tend to work individually, rather than collaborating with their peers, professors and teacher assistants. This Visual Studio Code extension is in support of creating a collaborative community for computer science students. This is done through gamification and provides an easy method to contact peers, professors and teacher assistants.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -82,7 +82,12 @@ First steps to getting project running
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Usage will go here
+This extension benefits both computer science students and teachers. 
+
+It's a great way for the teacher's to engage their students in the course, developing a better relationship and making the classes more welcoming. 
+
+This will also help the students after college, developing team-working skills that can be applied to the work setting.  Providing a collaboration tool extension may also reduce the rate at which students switch from the computer science major by fostering better relationships and offering a platform to get input on classes.
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
